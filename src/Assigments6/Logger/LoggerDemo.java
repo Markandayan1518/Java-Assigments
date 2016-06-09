@@ -1,11 +1,13 @@
 package Assigments6.Logger;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
 public class LoggerDemo 
 {
 	public static void main(String[] args) 
 	{
+                BasicConfigurator.configure();
 		int arr[] = {1, 2, 3, 5, 7};
 		LoggerDemo log4jTester = new LoggerDemo();
 		log4jTester.displayArrayValues(arr);
