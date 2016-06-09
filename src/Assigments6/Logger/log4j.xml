@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+
+<log4j:configuration debug="false">
+
+       <appender name="ERROR_LOG_FILE" class="org.apache.log4j.FileAppender">
+              <param name="File" value="ERROR_LOGGER_DEMO_FILE.log" />
+              <param name="Append" value="true" />
+              <layout class="org.apache.log4j.PatternLayout">
+                     <param name="ConversionPattern"
+                           value="%d{yyyy-MM-dd hh:mm:ss,SSS}  %5p [%t] %c [%M] - %m%n" />
+              </layout>
+       </appender>
+      
+       <logger name="Assigments6.Logger.LoggerDemo">
+              <level value="info" />
+              <appender-ref ref="ERROR_LOGGER_DEMO_FILE" />
+      </logger>
+      
+       <logger name="Assigments6.Logger.LoggerDemo">
+              <level value="warn" />
+              <appender-ref ref="ERROR_LOGGER_DEMO_FILE" />
+      </logger>
+      
+       <logger name="Assigments6.Logger.LoggerDemo">
+              <level value="debug" />
+              <appender-ref ref="ERROR_LOGGER_DEMO_FILE" />
+      </logger>
+      
+       <logger name="Assigments6.Logger.LoggerDemo">
+              <level value="error" />
+              <appender-ref ref="ERROR_LOGGER_DEMO_FILE" />
+      </logger>
+       
+</log4j:configuration> 
