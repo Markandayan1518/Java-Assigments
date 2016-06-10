@@ -6,7 +6,7 @@ package domparserdemo;
 
 /**
  *
- * @author uma-3266
+ * @author mark-4304
  */
 import org.w3c.dom.*;
 import javax.xml.parsers.*;
